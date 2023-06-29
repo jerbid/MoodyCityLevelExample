@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c013w1jadr073"]
+[gd_scene load_steps=12 format=3 uid="uid://c013w1jadr073"]
 
 [ext_resource type="PackedScene" uid="uid://jvauchllscj3" path="res://level-assets/terrainbridge.glb" id="1_sonq6"]
 [ext_resource type="Texture2D" uid="uid://bch3gacgxk8v7" path="res://level-assets/textures/forrest_ground_01_diff_4k.jpg" id="2_qe32n"]
@@ -24,6 +24,15 @@ normal_texture = ExtResource("6_hjvvx")
 uv1_scale = Vector3(0.05, 0.05, 0.05)
 uv1_triplanar = true
 
+[sub_resource type="CylinderMesh" id="CylinderMesh_b4fd2"]
+top_radius = 4000.0
+bottom_radius = 4000.0
+height = 10.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_32iqk"]
+transparency = 1
+albedo_color = Color(0, 0.517647, 1, 0.462745)
+
 [node name="terrainbridge" instance=ExtResource("1_sonq6")]
 
 [node name="terrain" parent="." index="0"]
@@ -31,3 +40,8 @@ surface_material_override/0 = SubResource("StandardMaterial3D_wrm21")
 
 [node name="bridge" parent="." index="1"]
 surface_material_override/0 = SubResource("StandardMaterial3D_om0k5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.338047, 0)
+mesh = SubResource("CylinderMesh_b4fd2")
+surface_material_override/0 = SubResource("StandardMaterial3D_32iqk")
