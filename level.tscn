@@ -1,3 +1,11 @@
-[gd_scene format=3 uid="uid://bbmnyqp6dsj5t"]
+[gd_scene load_steps=3 format=3 uid="uid://bbmnyqp6dsj5t"]
+
+[ext_resource type="PackedScene" uid="uid://c013w1jadr073" path="res://level-assets/terrainbridge.tscn" id="1_6legl"]
+[ext_resource type="PackedScene" uid="uid://cklyv3tfoq8xw" path="res://player_car/scenes/Player.tscn" id="2_li0us"]
 
 [node name="level" type="Node3D"]
+
+[node name="terrainbridge" parent="." instance=ExtResource("1_6legl")]
+
+[node name="Moody" parent="." instance=ExtResource("2_li0us")]
+transform = Transform3D(0.823592, 0, -0.567183, 0, 1, 0, 0.567183, 0, 0.823592, 43.4667, 9.28041, 0)
