@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bbmnyqp6dsj5t"]
+[gd_scene load_steps=4 format=3 uid="uid://bbmnyqp6dsj5t"]
 
 [ext_resource type="PackedScene" uid="uid://c013w1jadr073" path="res://level-assets/terrainbridge.tscn" id="1_6legl"]
 [ext_resource type="PackedScene" uid="uid://cklyv3tfoq8xw" path="res://player_car/scenes/Player.tscn" id="2_li0us"]
+[ext_resource type="PackedScene" uid="uid://vnedejrmrh0n" path="res://coolant/coolant.tscn" id="3_6lpig"]
 
 [node name="level" type="Node3D"]
 
@@ -10,3 +11,65 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -19.6456, 0)
 
 [node name="Moody" parent="." instance=ExtResource("2_li0us")]
 transform = Transform3D(0.823592, 0, -0.567183, 0, 1, 0, 0.567183, 0, 0.823592, 43.4667, -10.4031, 0)
+
+[node name="coolant_container" type="Node3D" parent="."]
+
+[node name="MOOOD_COOL" parent="coolant_container" instance=ExtResource("3_6lpig")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, -10.3647, 0)
+
+[node name="MOOOD_COOL2" parent="coolant_container" instance=ExtResource("3_6lpig")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 11.0877, -10.3647, 5.91345)
+
+[node name="MOOOD_COOL3" parent="coolant_container" instance=ExtResource("3_6lpig")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 2.21753, -10.3647, 14.0444)
+
+[node name="MOOOD_COOL4" parent="coolant_container" instance=ExtResource("3_6lpig")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -13.3054, -10.3647, 8.131)
+
+[node name="MOOOD_COOL5" parent="coolant_container" instance=ExtResource("3_6lpig")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -15.5229, -10.3647, -7.39182)
+
+[node name="MOOOD_COOL6" parent="coolant_container" instance=ExtResource("3_6lpig")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 8.87006, -10.3647, -10.3485)
+
+[node name="MOOOD_COOL7" parent="coolant_container" instance=ExtResource("3_6lpig")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -9.6095, -10.3647, -14.7836)
+
+[node name="MOOOD_COOL8" parent="coolant_container" instance=ExtResource("3_6lpig")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -50.2645, -10.3647, 124.183)
+
+[node name="MOOOD_COOL9" parent="coolant_container" instance=ExtResource("3_6lpig")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -53.2535, -12.3891, 110.328)
+
+[node name="MOOOD_COOL10" parent="coolant_container" instance=ExtResource("3_6lpig")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -40.6552, -11.981, 108.602)
+
+[node name="MOOOD_COOL11" parent="coolant_container" instance=ExtResource("3_6lpig")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -36.22, -10.3647, 122.704)
+
+[node name="MOOOD_COOL12" parent="coolant_container" instance=ExtResource("3_6lpig")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -22.9148, -10.3647, 110.877)
+
+[node name="MOOOD_COOL13" parent="coolant_container" instance=ExtResource("3_6lpig")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 83.5274, -11.742, -120.487)
+
+[node name="MOOOD_COOL14" parent="coolant_container" instance=ExtResource("3_6lpig")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 69.4829, -9.25089, -124.922)
+
+[node name="MOOOD_COOL15" parent="coolant_container" instance=ExtResource("3_6lpig")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 70.4829, -10.3647, -108.572)
+
+[node name="MOOOD_COOL16" parent="coolant_container" instance=ExtResource("3_6lpig")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 86.7448, -10.3647, -98.5569)
+
+[node name="MOOOD_COOL17" parent="coolant_container" instance=ExtResource("3_6lpig")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -86.963, -10.3876, -81.0495)
+
+[node name="MOOOD_COOL18" parent="coolant_container" instance=ExtResource("3_6lpig")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -70.7009, -9.65244, -81.7896)
+
+[node name="MOOOD_COOL19" parent="coolant_container" instance=ExtResource("3_6lpig")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -76.4431, -14.1816, -68.1051)
+
+[node name="MOOOD_COOL20" parent="coolant_container" instance=ExtResource("3_6lpig")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -62.7528, -13.1133, -61.8317)
